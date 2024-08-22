@@ -29,30 +29,6 @@ This project is a Review Sentiment Analysis App built using React.js. The app di
 
 ```bash
 
-
-Here’s a basic README.md file that you can include in your project:
-
-markdown
-Copy code
-# Review Sentiment Analysis App
-
-This project is a Review Sentiment Analysis App built using React.js. The app displays reviews fetched from a JSON file and allows users to toggle the visibility of translated content for each review.
-
-## Features
-
-- **Review Listing:** Displays a list of reviews, including the reviewer's name, rating, date, topic, and source.
-- **Source Icon:** Each review shows an icon representing the source of the review.
-- **Review Details:** Shows detailed information about the review, such as the topic and rating.
-- **Toggle Translated Content:** Users can toggle the visibility of the translated content for each review individually.
-
-## Tech Stack
-
-- **React.js:** The core framework used for building the user interface.
-- **Tailwind CSS:** A utility-first CSS framework used for styling the components.
-- **JSON:** The reviews data is fetched from a local JSON file.
-
-## File Structure
-
 project-root/
 │
 ├── src/
