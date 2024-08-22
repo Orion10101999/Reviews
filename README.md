@@ -90,6 +90,7 @@ To start the development server, run:
 npm run dev
 # or
 yarn dev
+```
 
 # json data file :-
 
