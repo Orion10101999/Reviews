@@ -44,7 +44,7 @@ const ReviewList = () => {
             <RawContent review={review} />
             <button
               onClick={() => toggleVisibility(review.review_id)}
-              className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+              className="mt-2 px-4 py-2 bg-blue-400 text-white rounded-lg hover:bg-blue-600 transition"
             >
               {visibility[review.review_id] ? 'Hide Translated Content' : 'See Translated Content'}
             </button>

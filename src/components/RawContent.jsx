@@ -1,9 +1,14 @@
 import React from 'react';
+import Tooltip from './Tooltip';
 
 const RawContent = ({ review }) => {
   // Extract the raw content and highlight indices
   let reviewRawContentString = review.raw_content;
-
+  let topic = review?.topic
+  let sentiment = review?.sentiment
+  console.log(topic);
+  console.log(sentiment);
+  
   // Extract the indices and sentiment color code
   let index1 = review?.analytics[0]?.highlight_indices[0][0];
   let index2 = review?.analytics[0]?.highlight_indices[0][1];
@@ -35,7 +40,11 @@ const RawContent = ({ review }) => {
       <p className="font-medium text-gray-700"> Raw Content: </p>
       <p className="text-gray-600">
         {beforeHighlight}
-        <span style={{ backgroundColor: backgroundColor }}>{highlightedText}</span>
+        <span style={{ backgroundColor: backgroundColor }}>
+          <Tooltip tooltip={`${topic} : ${sentiment}`} style={backgroundColor}>
+          {highlightedText}
+        </Tooltip>
+          </span>
         {afterHighlight}
       </p>
     </div>
