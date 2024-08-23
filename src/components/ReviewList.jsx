@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReviewData from '../data/reviews_data.json';
-import RawContent from './RawContent';
+import RawContent from './ReviewHighlighter';
 import Content from './Content';
 
 const ReviewList = () => {
