@@ -2,8 +2,7 @@
 # Deployed Website Link 
 
 ```bash
-
-https://reviews-sentiment-analysis.vercel.app/
+https://sentiment-review-tooltip.vercel.app/
 ```
 
 
