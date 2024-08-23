@@ -7,16 +7,24 @@ https://sentiment-review-tooltip.vercel.app/
 
 
 
-# Review Sentiment Analysis App
+# Review Sentiment Analysis App :-
 
-This project is a Review Sentiment Analysis App built using React.js. The app displays reviews fetched from a JSON file and allows users to toggle the visibility of translated content for each review.
+This is a Review Sentiment Analysis application built using React. The application displays a list of reviews, highlights specific text based on sentiment analysis, and shows tooltips with additional information about the sentiment.
 
 ## Features
 
-- **Review Listing:** Displays a list of reviews, including the reviewer's name, rating, date, topic, and source.
-- **Source Icon:** Each review shows an icon representing the source of the review.
-- **Review Details:** Shows detailed information about the review, such as the topic and rating.
-- **Toggle Translated Content:** Users can toggle the visibility of the translated content for each review individually.
+- **Review List:** Display a list of reviews fetched from a JSON file.
+
+- **Source Image :** Each review shows an icon representing the source of the review.
+
+- **Review Details:** Shows detailed information about the review, such as the content , topic and rating.
+
+
+- **Sentiment Highlighting:** Highlights portions of the review text based on sentiment analysis (Positive, Negative, Mixed, Neutral).
+
+- **Tooltips:** Show tooltips with sentiment details when hovering over highlighted text.
+
+- **Toggle Translations:** Allows users to show or hide translated content for each review.
 
 ## Tech Stack
 
@@ -27,24 +35,18 @@ This project is a Review Sentiment Analysis App built using React.js. The app di
 ## File Structure
 
 ```bash
-
-project-root/
+src/
 │
-├── src/
-│ ├── components/
-│ │ ├── ReviewList.jsx # Main component that renders the list of reviews
-│ │ ├── RawContent.jsx # Component that renders the raw review content
-│ │ └── Content.jsx # Component that renders the translated review content
-│ ├── data/
-│ │ └── reviews_data.json # JSON file containing the reviews data
-│ ├── App.jsx # Main App component
-│ ├── main.jsx # Entry point for the React application
-│ └── ... # Other configuration and utility files
+├── components/
+│   ├── ReviewList.jsx            # Main component that displays the list of reviews
+│   ├── RawContent.jsx            # Component that handles the raw content and highlights text
+│   ├── Tooltip.jsx               # Tooltip component used for displaying additional sentiment information
+│   └── Content.jsx               # Component to display the translated content of reviews
 │
-├── public/
-│ └── ... # Static assets like images and index.html
+├── data/
+│   └── reviewData.json           # JSON file containing review data
 │
-└── README.md # Project documentation
+└── App.js                        # Root component that renders ReviewList
 
 ```
 

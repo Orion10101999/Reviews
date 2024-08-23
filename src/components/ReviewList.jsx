@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReviewData from '../data/reviews_data.json';
+import ReviewData from '../data/reviewData.json';
 import RawContent from './ReviewHighlighter';
 import Content from './Content';
 
