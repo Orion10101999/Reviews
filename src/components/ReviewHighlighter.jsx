@@ -1,9 +1,9 @@
 import React from 'react';
 import Tooltip from './Tooltip';
 
-const RawContent = ({ review }) => {
+const ReviewHighlighter = ({ review }) => {
   // Extract the raw content and highlight indices
-  let reviewRawContentString = review.raw_content;
+  let ReviewHighlighterString = review.raw_content;
   let topic = review?.topic
   let sentiment = review?.sentiment
   console.log(topic);
@@ -27,13 +27,13 @@ const RawContent = ({ review }) => {
   }
   if(index1 == -1){
     let index = index2
-    index2 = reviewRawContentString.length - 1
+    index2 = ReviewHighlighterString.length - 1
     index1 = index2 - index
   }
   // Split the string into three parts
-  const beforeHighlight = reviewRawContentString.slice(0,index1);
-  const highlightedText = reviewRawContentString.slice(index1, index2);
-  const afterHighlight = reviewRawContentString.slice(index2);
+  const beforeHighlight = ReviewHighlighterString.slice(0,index1);
+  const highlightedText = ReviewHighlighterString.slice(index1, index2);
+  const afterHighlight = ReviewHighlighterString.slice(index2);
 
   return (
     <div>
@@ -51,4 +51,4 @@ const RawContent = ({ review }) => {
   );
 };
 
-export default RawContent;
+export default ReviewHighlighter;

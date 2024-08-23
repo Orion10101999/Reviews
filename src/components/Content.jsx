@@ -32,7 +32,7 @@ const Content = ({ review }) => {
 
   return (
     <div>
-      <p className="font-medium text-gray-700"> Raw Content: </p>
+      <p className="font-medium text-gray-700"> Content: </p>
       <p className="text-gray-600">
         {beforeHighlight}
         <span style={{ backgroundColor: backgroundColor }}>{highlightedText}</span>

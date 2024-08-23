@@ -15,7 +15,7 @@ This is a Review Sentiment Analysis application built using React. The applicati
 
 - **Review List:** Display a list of reviews fetched from a JSON file.
 
-- **Source Image :** Each review shows an icon representing the source of the review.
+- **Source Image :** Each review shows an icon Which I additionaly add In source.image or source.icon because given source or icon not supported.
 
 - **Review Details:** Shows detailed information about the review, such as the content , topic and rating.
 
